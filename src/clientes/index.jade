@@ -1,0 +1,31 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.clientes
+        section.clientes__hero
+            h1.clientes__hero__title Nuestros clientes
+            p.clientes__hero__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        section.clientes__body
+            .container
+                .row
+                    each client in site.data.clientes.clientes.clients
+                        .col-xs-12.col-sm-8.col-md-6
+                            .client
+                                .client__img
+                                    img.img-responsive(src=client.img)
+                                h3.client__name= client.name
+                                a.client__link._button.-small(href="#", data-modal="open")
+                                    i.fa.fa-map-marker
+                                    | Ver en el mapa
+
+
+    .c-modal
+        a.c-modal__close._button(data-modal="close")
+            i.fa.fa-times
+        .c-modal__container
+            .embed-responsive.-map
+                iframe(src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13127.521150911149!2d-58.36598589999999!3d-34.6577261!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1502549971876")

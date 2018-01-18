@@ -1,0 +1,29 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.promo
+        section.promo__hero
+            h1.nosotros__hero__title Promociones Vigentes
+            p.nosotros__hero__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        section.promo__body
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        ul.promo__list
+                            each image in site.data.home.hero.slider
+                                li.promo__item
+                                    img.img-responsive(src=image.img)
+                                    .promo__data
+                                        p.promo__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                        .promo__dates
+                                            p Promoción válida
+                                            span.promo__date.promo__date__from
+                                                strong desde
+                                                | 10/8/17
+                                            span.promo__date.promo__date__to
+                                                strong hasta
+                                                | 10/10/17

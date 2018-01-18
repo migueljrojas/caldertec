@@ -1,0 +1,52 @@
+extends ../_layouts/base
+
+include ../_modules/slider/slider
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.productos
+        section.productos__hero
+            h1.productos__hero__title Nuestros productos
+            p.productos__hero__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        section.productos__body
+            .container
+                .col-xs-24.col-sm-8.col-md-6
+                    ul.productos__categories
+                        each cat in site.data.faq.categories
+                            li= cat
+                .col-xs-24.col-sm-16.col-md-18
+                    .row
+                        each product in site.data.productos
+                            .col-xs-24.col-sm-12.col-md-8.col-lg-6.wow.fadeInUp
+                                h2.productos__name= product.name
+                                h4.productos__marca Marca XYZ
+                                +slider('productos__slider')
+                                    each img in product.fotos
+                                        .productos__slider__slide
+                                            img(src=img)
+                                a.productos__link._button.-small(href="#", data-modal="open") Ver detalle >>
+                                
+                                
+    .c-modal
+        a.c-modal__backdrop(data-modal="close")
+        a.c-modal__close._button(data-modal="close")
+            i.fa.fa-times
+        .c-modal__container
+            .col-xs-24.col-sm-12
+                +slider('productos__slider__detail')
+                    each img in site.data.productos[0].fotos
+                        .productos__slider__detail__slide
+                            img(src=img)
+            .col-xs-24.col-sm-12
+                span.productos__category Categoría
+                h2.productos__name= site.data.productos[0].name
+                h4.productos__marca Marca XYZ
+                p.productos__desc= site.data.productos[0].desc
+                a.productos__manuales(href="#")
+                    i.fa.fa-file-pdf-o
+                    | Descargar manuales
+                a.client__link._button.-small(href="/contacto") Realiza tu pedido
+                    

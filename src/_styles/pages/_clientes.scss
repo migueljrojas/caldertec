@@ -1,0 +1,67 @@
+.clientes {
+    &__hero {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        background: url('http://kidscan.org.uk/assets/Hotcoals1-1600x600.png') no-repeat center 60%;
+        background-size: cover;
+        color:$white;
+        text-shadow: 2px 2px 0 rgba(0,0,0,.5);
+
+        @include mq(sm) {
+            height: 40vh;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 28px;
+
+            @include mq(md) {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 300;
+                max-width: 600px;
+            }
+        }
+    }
+
+    &__body {
+        padding: 4% 0;
+    }
+}
+
+.client {
+
+    padding: $base/4;
+    background: $lightestGray;
+    margin-bottom: $base/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mq(sm){
+        padding: $base/2;
+        margin-bottom: $base;
+    }
+
+    &__name {
+        font-size:14px;
+        @include mq(sm){
+            font-size:18px;
+        }
+    }
+
+    &__link._button {
+        font-size: 12px;
+        padding: 0 5px;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+}

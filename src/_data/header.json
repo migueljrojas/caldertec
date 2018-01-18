@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Quienes somos",
+        "url":"/quienes-somos"
+    },
+    {
+        "name":"Servicios",
+        "url":"/servicios"
+    },
+    {
+        "name":"Productos",
+        "url":"/productos"
+    },
+    {
+        "name":"Preguntas Frecuentes",
+        "url":"/faqs"
+    },
+    {
+        "name":"Promociones",
+        "url":"/promociones"
+    },
+    {
+        "name":"Clientes",
+        "url":"/clientes"
+    },
+    {
+        "name":"Contacto",
+        "url":"/contacto"
+    }
+]

@@ -1,0 +1,108 @@
+.promo {
+    &__hero {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        background: url('https://pixnio.com/free-images/2017/02/24/2017-02-24-14-46-03.jpg') no-repeat center 60%;
+        background-size: cover;
+        color:$white;
+        text-shadow: 2px 2px 0 rgba(0,0,0,.5);
+
+        @include mq(sm) {
+            height: 40vh;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 28px;
+
+            @include mq(md) {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 300;
+                max-width: 600px;
+            }
+        }
+    }
+
+    &__body {
+        padding: 4% 0;
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        background: $lightestGray;
+        padding: 10px;
+        margin-bottom: 10px;
+
+        @include mq(sm) {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-bottom: 5px solid $red;
+            margin-bottom: 10px;
+
+            @include mq(sm) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__data {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__desc {
+        flex-basis:100%;
+        font-size: 16px;
+        font-weight: 300;
+
+        @include mq(sm){
+            flex-basis:60%;
+            font-size: 18px;
+            padding-right: 20px;
+        }
+    }
+
+    &__dates {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+
+        & > p {
+            flex-basis: 100%;
+            width: 100%;
+            display: block;
+            font-weight: bold;
+            font-size: 21px;
+            margin: 0;
+        }
+
+        @include mq(sm){
+            flex-basis:40%;
+        }
+    }
+
+    &__date {
+        flex-basis: 50%;
+        color: $red;
+        font-size: 21px;
+
+        strong {
+            display: block;
+            color:$text;
+            font-size: 16px;
+        }
+    }
+}

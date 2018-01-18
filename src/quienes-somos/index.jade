@@ -1,0 +1,31 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    main.nosotros
+        
+        section.nosotros__hero
+            h1.nosotros__hero__title Caldertec
+            p.nosotros__hero__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        
+        section.nosotros__body
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        h2.nosotros__title Historia
+                        p.nosotros__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        
+                        img.nosotros__img.img-responsive(src="/images/nosotros/image1.jpg")
+                        
+                        h2.nosotros__title Misión y Visión
+                        p.nosotros__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            
+                        h2.nosotros__title Objetivos
+                        ul.nosotros__list
+                            li Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                            li Lorem ipsum dolor sit amet, consectetur 
+                            li Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                            li Lorem ipsum dolor sit amet, consectetur 

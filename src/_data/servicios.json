@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Servicio 1",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "fotos": [
+            "/images/servicios/slide1.jpg",
+            "/images/servicios/slide2.jpg"
+        ]
+    },
+    {
+        "name": "Servicio 2",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "fotos": [
+            "/images/servicios/slide1.jpg",
+            "/images/servicios/slide2.jpg"
+        ]
+    },
+    {
+        "name": "Servicio 3",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "fotos": [
+            "/images/servicios/slide1.jpg",
+            "/images/servicios/slide2.jpg"
+        ]
+    },
+    {
+        "name": "Servicio 4",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "fotos": [
+            "/images/servicios/slide1.jpg",
+            "/images/servicios/slide2.jpg"
+        ]
+    }
+]

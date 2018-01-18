@@ -1,0 +1,165 @@
+.productos {
+    &__hero {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        background: url('http://www.flamesoftheforest.com.au/assets/Uploads/FOTF-arrival-flame-trench-RS.jpg') no-repeat center 60%;
+        background-size: cover;
+        color:$white;
+        text-shadow: 2px 2px 0 rgba(0,0,0,.5);
+
+        @include mq(sm) {
+            height: 40vh;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 28px;
+
+            @include mq(md) {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 300;
+                max-width: 600px;
+            }
+        }
+    }
+
+    &__body {
+        padding: 4% 0;
+    }
+
+    &__slider {
+        max-height: 200px;
+        overflow: hidden;
+        margin-bottom: 0!important;
+
+        &__slide {
+            height: 0;
+            padding-bottom: 100%;
+
+            img {
+                max-height: 200px;
+                top:0;
+                left:0;
+                min-width: 100%;
+                position: absolute;
+                top:0;
+            }
+        }
+
+        &__detail {
+            max-height: 400px;
+
+            &__slide {
+                height: 0;
+                padding-bottom: 150%;
+                max-height: 400px;
+                overflow: hidden;
+
+                @include mq(sm){
+                    padding-bottom: 120%;
+                }
+
+                @include mq(md){
+                    padding-bottom: 100%;
+                }
+
+                img {
+                    max-height: 400px;
+                    top:0;
+                    left:0;
+                    min-width: 100%;
+                    position: absolute;
+                    top:0;
+                }
+            }
+        }
+    }
+
+    &__name {
+        color: $red;
+        background: $lightestGray;
+        padding: 5px;
+        margin: 0 0 10px;
+        font-size: 18px;
+
+        @include mq(sm) {
+            font-size:21px;
+        }
+    }
+
+    &__category {
+        text-transform: uppercase;
+        background: $lightGray;
+        color:$midGray;
+        font-size:11px;
+        padding: 2px 3px;
+        display: block;
+    }
+
+    &__marca {
+        font-size:12px;
+        font-weight: 300;
+        margin: 0 0 10px;
+        color:$midGray;
+    }
+
+    &__manuales {
+        margin-bottom: 10px;
+        display: block;
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    &__link._button {
+        font-size: 12px;
+        padding: 0 5px;
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 20px;
+
+        @include mq(sm){
+            margin-bottom: 40px;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    &__item {
+        border-bottom:1px dotted $midGray;
+        padding: 40px 0;
+    }
+
+    &__categories {
+        li {
+            background: $lightestGray;
+            border-bottom: 1px dotted $midGray;
+            padding: 5px 10px;
+            border-left:0 solid $red;
+            font-weight: 600;
+            transition: all $duration $easing;
+
+            &:hover,
+            &.-active{
+                color: $red;
+                border-left: 5px solid $red;
+            }
+        }
+    }
+
+    & + .c-modal {
+        .c-modal__container {
+            padding: 20px;
+            background: $white;
+            border-radius: 10px;
+        }
+    }
+}

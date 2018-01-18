@@ -1,0 +1,77 @@
+.contacto{
+    &__hero {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        background: url('http://wallpapercave.com/wp/6DdpvwC.jpg') no-repeat center 60%;
+        background-size: cover;
+        color:$white;
+        text-shadow: 2px 2px 0 rgba(0,0,0,.5);
+
+        @include mq(sm) {
+            height: 40vh;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 28px;
+
+            @include mq(md) {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 300;
+                max-width: 600px;
+            }
+        }
+    }
+
+    &__body {
+        background: $bgSecondary;
+        padding: $base 0;
+
+        .container {
+            margin-top: $base;
+        }
+
+        h4{
+            text-transform: uppercase;
+            color:$darkBlue;
+            margin: 0 0 $base/2;
+        }
+
+        ._data{
+            margin-bottom: $base/2;
+
+            @include mq(md){
+                margin-bottom: 0;
+            };
+        }
+
+        ._block{
+            padding: $base/2;
+            margin-bottom: $base/2;
+            background: $white;
+
+            @include mq(sm){
+                padding: $base;
+                margin-bottom: $base;
+            };
+
+            dt,dd{
+                float:left;
+            }
+            dt{
+                clear: left;
+                width:25px;
+                color:$red;
+            }
+            dd{
+                width:calc(100% - 25px);
+            }
+        }
+    }
+}

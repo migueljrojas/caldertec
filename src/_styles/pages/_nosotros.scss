@@ -1,0 +1,60 @@
+.nosotros{
+    &__hero {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        background: url('/images/nosotros/hero.jpg') no-repeat center center;
+        background-size: cover;
+        color:$white;
+        text-shadow: 2px 2px 0 rgba(0,0,0,.5);
+
+        @include mq(sm) {
+            height: 35vh;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 28px;
+
+            @include mq(md) {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 300;
+                max-width: 600px;
+            }
+        }
+    }
+
+    &__text {
+        color:$midGray;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+
+        @include mq(md) {
+            font-size: 21px;
+            line-height: 32px;
+        }
+    }
+
+    &__title {
+        color: $red;
+    }
+
+    &__list{
+        list-style: circle;
+        padding-left: 20px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+
+        @include mq(md) {
+            font-size: 21px;
+            line-height: 32px;
+        }
+    }
+}

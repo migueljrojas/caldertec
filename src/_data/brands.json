@@ -1,0 +1,19 @@
+{
+  "clientes" : {
+      "title": "Marcas con las que trabajamos",
+      "clients": [
+          {
+          "img": "/images/home/logo-nasa.png"
+        },
+        {
+          "img": "/images/home/logo-tata.png"
+        },
+        {
+          "img": "/images/home/logo-tech-data.png"
+        },
+        {
+          "img": "/images/home/logo-toyota.png"
+        }
+      ]
+  }
+}

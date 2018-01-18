@@ -1,0 +1,19 @@
+{
+  "clientes" : {
+      "title": "Nuestros clientes",
+      "clients": [
+          {
+            "img": "/images/home/1.jpg",
+            "name": "Cliente Uno"
+          },
+          {
+            "img": "/images/home/2.jpg",
+            "name": "Cliente Dos"
+          },
+          {
+            "img": "/images/home/3.jpg",
+            "name": "Cliente Tres"
+          }
+      ]
+  }
+}

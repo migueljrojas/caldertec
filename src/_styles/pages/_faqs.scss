@@ -1,0 +1,52 @@
+.faqs{
+    &__hero {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        background: url('https://upload.wikimedia.org/wikipedia/commons/8/82/Vlammen_gasboiler.JPG') no-repeat center 45%;
+        background-size: cover;
+        color:$white;
+        text-shadow: 2px 2px 0 rgba(0,0,0,.5);
+
+        @include mq(sm) {
+            height: 40vh;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 28px;
+
+            @include mq(md) {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 300;
+                max-width: 600px;
+            }
+        }
+    }
+
+    &__body {
+        padding: 4% 0;
+    }
+
+    &__categories {
+        li {
+            background: $lightestGray;
+            border-bottom: 1px dotted $midGray;
+            padding: 5px 10px;
+            border-left:0 solid $red;
+            font-weight: 600;
+            transition: all $duration $easing;
+
+            &:hover,
+            &.-active{
+                color: $red;
+                border-left: 5px solid $red;
+            }
+        }
+    }
+}

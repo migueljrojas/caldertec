@@ -1,0 +1,69 @@
+{
+    "hero": {
+        "slider": [
+            {
+                "img":"/images/home/slide1.jpg"
+            },
+            {
+                "img":"/images/home/slide2.jpg"
+            }
+        ]
+    },
+    "services": {
+        "title": "Conoce nuestros servicios",
+        "list": [
+            {
+                "name": "Servicio 1",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "link":{
+                    "url": "/servicios/servicio-1",
+                    "text": "ver más >>"
+                }
+            },
+            {
+                "name": "Servicio 2",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "link":{
+                    "url": "/servicios/servicio-1",
+                    "text": "ver más >>"
+                }
+            },
+            {
+                "name": "Servicio 3",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "link":{
+                    "url": "/servicios/servicio-1",
+                    "text": "ver más >>"
+                }
+            },
+            {
+                "name": "Servicio 4",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "link":{
+                    "url": "/servicios/servicio-1",
+                    "text": "ver más >>"
+                }
+            }
+        ]
+    },
+    "products": {
+        "title": "Productos destacados",
+        "list": [
+            {
+                "img": "/images/home/producto1.jpg",
+                "name": "Nombre del producto 1",
+                "price": "$9.999",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            {
+                "img": "/images/home/producto2.jpg",
+                "name": "Nombre del producto 2",
+                "price": "$9.999",
+                "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contáctanos"
+    }
+}
